@@ -8,7 +8,7 @@ const projectList: Project[] = [
     description:
       'Offline-first enterprise field service app for HVAC technicians. Manage tickets, DSRs with digital signatures, inventory/spares, geolocation tracking, and role-based access — all while offline. Syncs when connectivity returns.',
     tags: ['Flutter', 'Drift/SQLite', 'Riverpod', 'Dio', 'Express', 'Angular', 'SQL', 'Google APIs', 'Firebase'],
-    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.stulz.serviceautomation',
+    playStoreUrl: 'https://play.google.com/store/search?q=stulz+care+fse&c=apps&hl=en',
   },
   {
     title: 'Hedged',
@@ -16,8 +16,8 @@ const projectList: Project[] = [
     description:
       'FinTech app for retail investors. Real-time trading signals, live P&L tracking, one-click trade execution via Kotak, Groww & Upstox, interactive dashboards, and rich media educational content.',
     tags: ['Flutter', 'Riverpod', 'AutoRoute', 'Dio', 'Shorebird', 'Firebase', 'Express', 'SQL'],
-    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.hedged.app',
-    appStoreUrl: 'https://apps.apple.com/in/app/hedged/id6738634779',
+    playStoreUrl: 'https://play.google.com/store/search?q=hedged&c=apps&hl=en',
+    appStoreUrl: 'https://apps.apple.com/in/app/hedged/id1661539225',
   },
   {
     title: 'AppVault',
