@@ -7,6 +7,7 @@ export interface Project {
   appStoreUrl?: string
   githubUrl?: string
   liveUrl?: string
+  wip?: boolean
 }
 
 export interface Experience {

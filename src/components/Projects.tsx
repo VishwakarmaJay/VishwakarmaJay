@@ -39,11 +39,7 @@ const projectList: Project[] = [
   },
 ]
 
-interface ProjectWithWip extends Project {
-  wip?: boolean
-}
-
-function ProjectCard({ project }: { project: ProjectWithWip }) {
+function ProjectCard({ project }: { project: Project }) {
   const ref = useScrollReveal<HTMLDivElement>()
   return (
     <div
