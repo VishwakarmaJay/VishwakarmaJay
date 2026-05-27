@@ -78,12 +78,12 @@ export default function Hero() {
           see my apps →
         </a>
         <a
-          href="https://linkedin.com/in/jayvishwakarma1206"
+          href="https://github.com/vishwakarmajay"
           target="_blank"
           rel="noreferrer"
           className="btn btn-ghost"
         >
-          linkedin ↗
+          github ↗
         </a>
       </div>
 
@@ -93,8 +93,8 @@ export default function Hero() {
       >
         {[
           { label: 'LINKEDIN', href: 'https://linkedin.com/in/jayvishwakarma1206' },
+          { label: 'GITHUB', href: 'https://github.com/vishwakarmajay' },
           { label: 'EMAIL', href: 'mailto:vishwakarmajay292@gmail.com' },
-          { label: 'PHONE', href: 'tel:+919372454445' },
           { label: 'MUMBAI', href: '#contact' },
         ].map((link) => (
           <a

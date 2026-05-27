@@ -6,22 +6,44 @@ const projectList: Project[] = [
     title: 'Stulz Service Automation',
     emoji: '🛠️',
     description:
-      'Offline-first enterprise field service app for HVAC technicians. Manage tickets, daily service reports with digital signatures, inventory/spares, geolocation tracking, and role-based access — all while offline. Syncs when connectivity returns.',
-    tags: ['Flutter', 'Dart', 'Drift/SQLite', 'Riverpod', 'Dio', 'Express', 'Angular', 'SQL', 'Google APIs', 'Firebase'],
-    playStoreUrl: 'https://play.google.com/store',
+      'Offline-first enterprise field service app for HVAC technicians. Manage tickets, DSRs with digital signatures, inventory/spares, geolocation tracking, and role-based access — all while offline. Syncs when connectivity returns.',
+    tags: ['Flutter', 'Drift/SQLite', 'Riverpod', 'Dio', 'Express', 'Angular', 'SQL', 'Google APIs', 'Firebase'],
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.stulz.serviceautomation',
   },
   {
     title: 'Hedged',
     emoji: '📈',
     description:
-      'High-performance FinTech app for retail investors. Real-time trading signals, live P&L tracking, one-click trade execution via Kotak, Groww & Upstox APIs, interactive dashboards, and rich media educational content.',
-    tags: ['Flutter', 'Dart', 'Riverpod', 'AutoRoute', 'Dio', 'Shorebird', 'Firebase', 'Express', 'SQL'],
-    playStoreUrl: 'https://play.google.com/store',
-    appStoreUrl: 'https://apps.apple.com',
+      'FinTech app for retail investors. Real-time trading signals, live P&L tracking, one-click trade execution via Kotak, Groww & Upstox, interactive dashboards, and rich media educational content.',
+    tags: ['Flutter', 'Riverpod', 'AutoRoute', 'Dio', 'Shorebird', 'Firebase', 'Express', 'SQL'],
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.hedged.app',
+    appStoreUrl: 'https://apps.apple.com/in/app/hedged/id6738634779',
+  },
+  {
+    title: 'AppVault',
+    emoji: '🗄️',
+    description:
+      'Self-hostable Android app marketplace — an open alternative to Google Play. Developer console for publishing, an admin review pipeline with structured feedback, signed URL downloads, APK parsing, and a full user-facing store with ratings.',
+    tags: ['Flutter', 'Spring Boot', 'PostgreSQL', 'Docker', 'GCP', 'Bucket4j', 'OpenAPI'],
+    githubUrl: 'https://github.com/vishwakarmajay/appvault',
+    wip: true,
+  },
+  {
+    title: 'LexRAG',
+    emoji: '⚖️',
+    description:
+      'Legal reasoning engine that maps plain-language fact patterns to applicable Indian laws using RAG. IRAC-structured output, zero hallucinated section numbers, multi-act cross querying across IPC, IT Act, CrPC, and more.',
+    tags: ['Python', 'RAG', 'BM25', 'Vector Search', 'LLM', 'LangChain', 'FastAPI'],
+    githubUrl: 'https://github.com/vishwakarmajay/lexrag',
+    wip: true,
   },
 ]
 
-function ProjectCard({ project }: { project: Project }) {
+interface ProjectWithWip extends Project {
+  wip?: boolean
+}
+
+function ProjectCard({ project }: { project: ProjectWithWip }) {
   const ref = useScrollReveal<HTMLDivElement>()
   return (
     <div
@@ -30,8 +52,8 @@ function ProjectCard({ project }: { project: Project }) {
     >
       <div className="absolute inset-0 bg-gradient-to-br from-[rgba(0,212,255,0.03)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-      {/* Store badges */}
-      <div className="flex gap-2 mb-4 relative z-10">
+      {/* Badges row */}
+      <div className="flex gap-2 mb-4 relative z-10 flex-wrap">
         {project.playStoreUrl && (
           <span className="font-mono text-[9px] px-2 py-[3px] rounded-sm bg-[rgba(16,185,129,0.1)] text-accent4 border border-[rgba(16,185,129,0.2)]">
             ▶ PLAY STORE
@@ -40,6 +62,11 @@ function ProjectCard({ project }: { project: Project }) {
         {project.appStoreUrl && (
           <span className="font-mono text-[9px] px-2 py-[3px] rounded-sm bg-[rgba(0,212,255,0.08)] text-accent border border-[rgba(0,212,255,0.15)]">
             ◆ APP STORE
+          </span>
+        )}
+        {project.wip && (
+          <span className="font-mono text-[9px] px-2 py-[3px] rounded-sm bg-[rgba(245,158,11,0.1)] text-accent3 border border-[rgba(245,158,11,0.2)]">
+            ⚙ IN PROGRESS
           </span>
         )}
       </div>
@@ -118,10 +145,10 @@ export default function Projects() {
     >
       <div className="section-label">03 — PROJECTS</div>
       <p ref={introRef} className="reveal text-[#667788] text-[15px] mb-10 max-w-[500px]">
-        apps shipped to production. live. on real stores. used by real people.
+        shipped to production + things I'm building when I should be sleeping
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
         {projectList.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}

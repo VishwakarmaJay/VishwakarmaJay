@@ -16,6 +16,13 @@ const links: ContactLink[] = [
     external: true,
   },
   {
+    icon: '🐙',
+    label: 'GITHUB',
+    value: '/vishwakarmajay',
+    href: 'https://github.com/vishwakarmajay',
+    external: true,
+  },
+  {
     icon: '📞',
     label: 'PHONE',
     value: '+91 9372454445',
