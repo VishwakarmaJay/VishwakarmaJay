@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="357" viewBox="0 0 460 357" role="img" aria-label="Jay Vishwakarma — Flutter Developer, Mumbai">
+<title>Jay Vishwakarma — Flutter Developer</title>
+<style>
+    text { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size: 12.5px; fill: #c9d1d9; }
+    .u { fill: #00d4ff; font-weight: 700; font-size: 14px; }
+    .d { fill: #c9d1d9; font-size: 14px; }
+    .k { fill: #00d4ff; font-weight: 600; }
+    .v { fill: #c9d1d9; }
+    .l { opacity: 0; animation: in .45s ease-out forwards; }
+    @keyframes in { from { opacity: 0; transform: translateX(-10px); } to { opacity: 1; transform: none; } }
+    
+</style>
+<rect width="460" height="357" rx="10" fill="#0d1117"/>
+<g class="l" style="animation-delay:0.50s"><text x="22" y="34"><tspan class="u">jay</tspan><tspan class="d">@</tspan><tspan class="u">vishwakarma</tspan></text></g>
+<g class="l" style="animation-delay:0.63s"><rect x="22" y="39.5" width="117" height="1.5" fill="#6e7681"/></g>
+<g class="l" style="animation-delay:0.76s"><text x="22" y="63.0"><tspan class="k">Role</tspan></text><text x="114" y="63.0" class="v">Flutter Developer @ BlackCurrant Labs</text></g>
+<g class="l" style="animation-delay:0.89s"><text x="22" y="82.5"><tspan class="k">Location</tspan></text><text x="114" y="82.5" class="v">Mumbai, India</text></g>
+<g class="l" style="animation-delay:1.02s"><text x="22" y="102.0"><tspan class="k">Uptime</tspan></text><text x="114" y="102.0" class="v">1.5+ yrs shipping production apps</text></g>
+<g class="l" style="animation-delay:1.15s"><text x="22" y="121.5"><tspan class="k">Education</tspan></text><text x="114" y="121.5" class="v">B.Tech IT · TCET · 8.8 CGPA</text></g>
+<g class="l" style="animation-delay:1.28s"><text x="22" y="150.8"><tspan class="k">Mobile</tspan></text><text x="114" y="150.8" class="v">Flutter · Dart · Riverpod · AutoRoute</text></g>
+<g class="l" style="animation-delay:1.41s"><text x="22" y="170.2"></text><text x="114" y="170.2" class="v">Dio · OpenAPI · Shorebird OTA</text></g>
+<g class="l" style="animation-delay:1.54s"><text x="22" y="189.8"><tspan class="k">Backend</tspan></text><text x="114" y="189.8" class="v">Express · Spring Boot · Firebase</text></g>
+<g class="l" style="animation-delay:1.67s"><text x="22" y="209.2"><tspan class="k">Web</tspan></text><text x="114" y="209.2" class="v">Angular · TypeScript</text></g>
+<g class="l" style="animation-delay:1.80s"><text x="22" y="228.8"><tspan class="k">Data</tspan></text><text x="114" y="228.8" class="v">PostgreSQL · MongoDB · MySQL</text></g>
+<g class="l" style="animation-delay:1.93s"><text x="22" y="258.0"><tspan class="k">Shipped</tspan></text><text x="114" y="258.0" class="v">Hedged — FinTech signals (Play + App Store)</text></g>
+<g class="l" style="animation-delay:2.06s"><text x="22" y="277.5"></text><text x="114" y="277.5" class="v">Stulz FSA — offline-first field service</text></g>
+<g class="l" style="animation-delay:2.19s"><text x="22" y="297.0"><tspan class="k">Obsessed</tspan></text><text x="114" y="297.0" class="v">Clean arch · apps that survive bad WiFi</text></g>
+<g class="l" style="animation-delay:2.32s"><rect x="22" y="312.5" width="22" height="14" rx="2" fill="#30363d"/><rect x="48" y="312.5" width="22" height="14" rx="2" fill="#ff7b72"/><rect x="74" y="312.5" width="22" height="14" rx="2" fill="#3fb950"/><rect x="100" y="312.5" width="22" height="14" rx="2" fill="#d29922"/><rect x="126" y="312.5" width="22" height="14" rx="2" fill="#58a6ff"/><rect x="152" y="312.5" width="22" height="14" rx="2" fill="#bc8cff"/><rect x="178" y="312.5" width="22" height="14" rx="2" fill="#39c5cf"/><rect x="204" y="312.5" width="22" height="14" rx="2" fill="#c9d1d9"/></g>
+</svg>
